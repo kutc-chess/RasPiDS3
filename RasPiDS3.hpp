@@ -7,10 +7,10 @@
 #define UPDATELOOP(c, x) for((c).update(); (x); (c).update())	// コントローラcの状態をupdateしながら条件xでループ
 
 namespace RPDS3{
-	enum ButtonsNum {SELECT, LEFT_STICK, RIGHT_STICK, START, UP, RIGHT, DOWN, LEFT, L2, R2, L1, R1, TRIANGLE, CIRCLE, CROSS, SQUARE};
-	const int NumButtons = 16;
+	enum ButtonsNum {CROSS, CIRCLE, TRIANGLE, SQUARE, L1, R1, L2, R2, SELECT, START, PS, L3, R3, UP, DOWN, LEFT, RIGHT};
+	const int NumButtons = 17;
 	enum SticksNum {LEFT_X, LEFT_Y, RIGHT_X, RIGHT_Y, LEFT_T, RIGHT_T};
-	const int NumSticks = 6;
+	const int NumSticks = 8;
 	enum AxisNum {X_AXIS, Y_AXIS, Z_AXIS};
 	const int NumAxis = 3;
 	class DualShock3 {
